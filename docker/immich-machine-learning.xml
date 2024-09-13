@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>og-immich-machine-learning</Name>
+  <Beta>false</Beta>
+  <Repository>ghcr.io/immich-app/immich-machine-learning:release</Repository>
+  <Registry>https://github.com/immich-app/immich-machine-learning</Registry>
+  <Network>bridge</Network>
+  <WebUI></WebUI>
+  <Category>Other:</Category>
+  <Overview>Immich is a self-hosted photo and video management solution:&lt;br&gt;This is the mandatory machine learning worker.&lt;br&gt;&lt;br&gt;This template was created using comp2unraid&lt;br&gt;Convert docker compose templates to unraid templates&lt;br&gt;https://github.com/Ogglord/comp2unraid</Overview>
+  <Project>https://immich.app/</Project>
+  <Author>Ogglord</Author>
+  <Support>https://github.com/Ogglord/unraid-templates/issues/new/choose</Support>
+  <TemplateURL>https://raw.githubusercontent.com/Ogglord/unraid-templates/main/docker/immich-machine-learning.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Ogglord/unraid-templates/main/icons/generic-logo.png</Icon>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <DonateText>If you appreciate my work, then please consider buying me a hotdog</DonateText>
+  <DonateLink>https://www.paypal.com/donate/?business=Q48H4F8ADNVJU</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Date>1970-01-01</Date>
+  <Changes></Changes>
+  <Config Name="Port" Target="3003" Default="3003" Mode="tcp" Description="Port" Type="Port" Display="advanced" Required="true" Mask="false">3003</Config>
+  <Config Name="TZ" Target="TZ" Default="Europe/Berlin" Mode="" Description="Specify the env value for timezone" Type="Variable" Display="always" Required="true" Mask="false">Europe/Berlin</Config>
+  <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Mode="" Description="Specify the env value, usually empty" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="REDIS_USERNAME" Target="REDIS_USERNAME" Default="" Mode="" Description="Specify the env value, usually empty" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="postgres" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="true">postgres</Config>
+  <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="postgres" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">6379</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="DB_DATABASE_NAME" Target="DB_DATABASE_NAME" Default="immich" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">immich</Config>
+  <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.x</Config>
+  <Config Name="DB_HOSTNAME" Target="DB_HOSTNAME" Default="192.168.1.x" Mode="" Description="Specify the env value" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.x</Config>
+  <Config Name="Volume for /cache" Target="/cache" Default="model-cache" Mode="rw" Description="Dont modify this unless you know what you're doing" Type="Path" Display="advanced" Required="true" Mask="false">model-cache</Config>
+</Container>

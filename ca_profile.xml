@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/Ogglord/unraid-templates/main/icons/profile.jpg</Icon>
+  <Profile>
+    Packaging existing docker images for unraid, usually when they are not found in the Community Apps. I use the comp2unraid tool to keep templates up-to-date.
+  </Profile>
+  <DonateLink>https://www.paypal.com/donate/?business=Q48H4F8ADNVJU</DonateLink>
+  <DonateText>If you appreciate my work, then please consider buying me a hotdog</DonateText>
+</Maintainer>
